@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="src/css/estilos.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div>
-        <figure>
+        <figure class="logo">
           <img src="src/" alt="Logo" />
         </figure>
-        <nav>
+        <nav class="menu">
           <ol>
             <li>
               <a class="link" href="./portafolio/portafolio.html">Portafolio</a>
@@ -29,7 +29,7 @@
         </nav>
       </div>
     </header>
-    <section>
+    <section class="hero">
       <h1>
         Hola! Soy <strong>Angel Gonzalez</strong> Desarrollador <br />
         <strong>Javascript</strong> en <br />
@@ -42,24 +42,31 @@
         alt="imagen principal del sitio"
       />
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="portfolio">
       <h2>Portafolio (Proyectos Destacados)</h2>
-      <article>
-        <h3>Cursos</h3>
-        <h6>HTML CSS</h6>
-        <p>
+      <article class="project">
+        <h3 class="project_title">Cursos</h3>
+        <h6 class="project_course">HTML CSS</h6>
+        <p class="project_date">
           <small><strong>Fecha:</strong> 01/01/1900</small>
         </p>
-        <p>
+        <p class="project_url">
           <small><strong>Puedes verlo en:</strong> GitHub</small>
         </p>
-        <p>
+        <p class="project_description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           voluptates nisi sint perferendis non laborum iusto quaerat facere
           ipsam, optio modi ratione, quam, voluptatibus error illum? Nihil sunt
           deleniti ipsam!
         </p>
-        <img width="500" src="src/" alt="prouyecto del curso de React Native" />
+        <figure class="project_imageContainer">
+          <img
+            class="project_image"
+            width="500"
+            src="src/"
+            alt="prouyecto del curso de React Native"
+          />
+        </figure>
       </article>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id
@@ -89,18 +96,18 @@
     </section>
     <section id="eventos">
       <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="src/" width="500" />
+      <article class="event">
+        <figure class="event_imageContainer">
+          <img class="event_image" src="src/" width="500" />
         </figure>
-        <h3>Ponencias</h3>
-        <p>
+        <h3 class="event_title">Ponencias</h3>
+        <p class="event_description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
           officia voluptatem itaque accusamus ex, animi deserunt? Nulla dicta
           dignissimos labore magni ipsum, a ducimus amet voluptates corporis,
           nobis deleniti vel.
         </p>
-        <a>Ver</a>
+        <a class="event-url">Ver</a>
       </article>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id
@@ -128,8 +135,8 @@
         excepturi vero cupiditate quos incidunt est! Ab non minima porro.
       </p>
     </section>
-    <section id="contacto">
-      <form action="/suscripcion/">
+    <section id="contacto" class="contact">
+      <form action="/suscripcion/" class="form_email">
         <h3>Contacto</h3>
         <label for="email">e-mail</label>
         <input type="text" placeholder="Déjame tu email" id="email" />
@@ -211,6 +218,6 @@
         excepturi vero cupiditate quos incidunt est! Ab non minima porro.
       </p>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
   </body>
 </html>
