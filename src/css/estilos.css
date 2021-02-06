@@ -118,6 +118,7 @@ h1 strong {
 
 .flexbox {
   display: flex;
+  height: 200px;
   /* flex-direction: column; */
   /* flex-wrap: nowrap; */
   flex-wrap: wrap;
@@ -127,6 +128,12 @@ h1 strong {
   /* justify-content: space-around; */
   /* justify-content: space-between; */
   /* justify-content: space-evenly; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  flex-direction: column;
 }
 
 .box {
